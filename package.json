@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "del": "^6.0.0",
+    "fullpage.js": "^3.0.9",
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "node-normalize-scss": "^8.1.2",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "start": "gulp dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

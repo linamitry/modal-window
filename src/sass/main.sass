@@ -1,0 +1,52 @@
+.modal
+    &__inner.open &-window
+        transform: translateY(200px)
+    &__inner.open &-overlay
+        background: rgba(0, 0, 0, 0.5)
+    &__inner.hide &-window
+        transform: translateY(-200px)
+    &__inner.hide &-overlay
+        background: rgba(0, 0, 0, 0)
+    &__inner.open &-overlay,
+    &__inner.open &-window
+        opacity: 1
+        z-index: 200
+    &__inner.hide &-overlay,
+    &__inner.hide &-window
+        opacity: 1
+        z-index: 200
+    &-window,
+    &-overlay
+        opacity: 0
+        z-index: -1
+    &-overlay
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        background: rgba(0, 0, 0, 0)
+        transition: background .2s ease-in
+    &-window
+        width: 600px
+        border-radius: 5px
+        background: #fff
+        margin: 0 auto
+        transform: translateY(-200px)
+        transition: transform .2s ease-in
+    &-header
+        padding: 5px 10px 
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid #eee
+    &-title
+        font-size: 1.5rem
+    &-close
+        cursor: pointer
+    &-body
+        padding: 10px
+    &-body p
+        margin: 0 0 5px
+    &-footer
+        padding: 5px 10px
+        border-top: 1px solid #eee
